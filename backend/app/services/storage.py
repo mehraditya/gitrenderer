@@ -29,7 +29,7 @@ class LocalStorage:
     Storage abstraction.
     Today: local filesystem
     Tomorrow: S3 / R2
-    
+        
     """
 
     def __init__(self):
