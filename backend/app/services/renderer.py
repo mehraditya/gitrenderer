@@ -3,7 +3,7 @@ import hashlib
 import tempfile
 from pathlib import Path
 
-from app.core.config import settings
+from app.config.config import settings
 from app.services.storage import LocalStorage
 
 
