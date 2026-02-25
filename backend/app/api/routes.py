@@ -5,10 +5,10 @@ from app.models.schemas import (
     RenderResponse,
     RenderStatusResponse,)
 from app.services.renderer import render_repository
-from services.storage import LocalStorage
-from sqlalchemy.org import Session
+from app.services.storage import LocalStorage
+from sqlalchemy.orm import Session
 from app.api.deps import get_db
-from app.models.job import Job
+from app.models.jobs import Job
 
 
 router = APIRouter()
