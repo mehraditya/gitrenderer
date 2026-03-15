@@ -3,7 +3,7 @@ from app.config.config import settings
 
 class LocalStorage:
     def __init__(self):
-        self.base_dir = Path(settings.RENDERS_DIR)
+        self.base_dir = Path(settings.STORAGE_DIR)
         self.base_dir.mkdir(exist_ok=True)
     
     def exists(self, render_id: str)-> bool:
